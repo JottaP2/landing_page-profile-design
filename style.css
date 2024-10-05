@@ -8,7 +8,47 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
+
+.banner{
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 1990px;
+    height: 600px;
+    background-image: url('./img/parte\ 1.jpg');
+}
+
+.info{
+    padding: 120px  150px;
+}
+
+.info h1{
+    display: flex;
+    font-size: 100px;
+    
+}
+
+.info h2{
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.info span{
+    display: flex;
+    color: #00FFB6;
+    font-weight: 300;
+    font-size: 25px;
+
+}
+
+.info p{
+    font-size: 18px;
+    font-weight: 200;
+    width: 800px;
+}
+
 
 .projetos {
     display: flex;
@@ -35,35 +75,47 @@ h1{
     margin-bottom: 50px;
 }
 
+.img-container {
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+
 .box1 {
+    width: 340px;
+    height: 205px;
     border-radius: 10px;
     padding:  55px 125px;
     background-color: white;
 }
 
-.box3{
-    border-radius: 10px;
-    padding: 90px 170px;
-    background-color: white
-}
 
-.img-container {
-    width: 100px; 
-    height: 100px; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;     
-}
 
 .box1 img {
-
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 160px;
 }
 
 .box2 img{
-width: 350px;
+width: 340px;
+height: 205px;
 }
 
+.box3 {
+    width: 340px;
+    height: 205px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
-.box3 img{
-
+.box3 img {
+    width: 300px;
 }
