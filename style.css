@@ -1,3 +1,4 @@
+/* Estilo básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,48 +7,58 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     overflow-x: hidden;
 }
 
-.banner{
+.banner {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 1990px;
-    height: 600px;
+    width: 240vh;
+    height: 100vh;
     background-image: url('./img/parte\ 1.jpg');
 }
 
-.info{
-    padding: 120px  150px;
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 120px 120px;
+    height: 100%; /* Ajusta para preencher a altura da seção */
 }
 
-.info h1{
+.info h1 {
     display: flex;
     font-size: 100px;
-    
+    align-items: flex-end;
+    line-height: 0.5;
 }
 
-.info h2{
+.info h2 {
     font-size: 55px;
     font-weight: 300;
 }
 
-.info span{
+.info span {
     display: flex;
     color: #00FFB6;
     font-weight: 300;
     font-size: 25px;
-
 }
 
-.info p{
+.info p {
     font-size: 18px;
     font-weight: 200;
-    width: 800px;
+    max-width: 800px; /* Limita a largura do texto */
 }
+
 
 
 .projetos {
@@ -55,16 +66,18 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #0A0A0A;
+
 }
 
-h1{
+.projetos h1 {
     margin-top: 60px;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
     text-align: center;
-
 }
+
+
 
 .imgbox {
     display: flex;
@@ -75,12 +88,15 @@ h1{
     margin-bottom: 50px;
 }
 
-.img-container {
-    width: 100px; 
-    height: 100px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;     
+.content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -88,10 +104,9 @@ h1{
     width: 340px;
     height: 205px;
     border-radius: 10px;
-    padding:  55px 125px;
+    padding:  25px 105px;
     background-color: white;
 }
-
 
 
 .box1 img {
